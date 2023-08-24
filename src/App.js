@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Header, Main, About, Footer, NoteNotFound } from './components'
+import { Header, Main, Create, About, Footer, NoteNotFound } from './components'
 
 import styles from './App.module.css'
 
@@ -11,6 +11,7 @@ function App() {
           <div className={styles.pageContent}>
             <Routes> 
               <Route exact path='/' element={<Main />} />
+              <Route path='/create' element={<Create />} />
               <Route path='/about' element={<About />} />
               <Route path='*' element={<NoteNotFound />} />
             </Routes>

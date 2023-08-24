@@ -1,5 +1,6 @@
 export * from './header'
 export * from './main'
+export * from './create'
 export * from './about'
 export * from './footer'
 export * from './note-not-found'
