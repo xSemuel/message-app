@@ -1,0 +1,50 @@
+
+.footer {
+    background-color: var(--color-bg-medium);
+    height: 130px;
+}
+
+.wrapper {
+    max-width: var(--layoud-width);
+    margin: 0 auto;
+    padding: 10px 24px 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-right: 50px;
+}
+
+.copywrite {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-link-hover);  
+}
+
+.copywrite a {
+    color: var(--color-link-hover);
+}
+
+.copywrite a:hover {
+    color: var(--color-text);
+}
+
+.socialIcons {
+    display: flex;
+    gap: 24px;
+}
+
+.socialIcon {
+    border: 1px solid var(--color-stroke);
+    border-radius: var(--border-8);
+    padding: 12px 14px;
+
+}
+
+.socialIcon:hover {
+    background-color: var(--color-link-hover);
+}

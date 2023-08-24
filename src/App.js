@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Header, Main } from './components'
+import { Header, Main, About, Footer } from './components'
 
 
 function App() {
@@ -8,8 +8,11 @@ function App() {
         <BrowserRouter>
           <Header />
           <Routes> 
-            <Route path='/' element={<Main />} />
+            <Route exact path='/' element={<Main />} />
+            <Route path='/about' element={<About />} />
+            
           </Routes>
+          <Footer />
         </BrowserRouter>
     </div>
   );
