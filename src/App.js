@@ -10,7 +10,7 @@ function App() {
           <Header />
           <div className={styles.pageContent}>
             <Routes> 
-              <Route exact path='/' element={<Main />} />
+              <Route path='/' element={<Main />} />
               <Route path='/create' element={<Create />} />
               <Route path='/note/' element={<Note />} />
               <Route path='/note/:noteUrl' element={<Note />} />
