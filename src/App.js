@@ -1,5 +1,5 @@
-import { BrowserRouter } from "react-router-dom";
-import { Header } from './components'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Header, Main } from './components'
 
 
 function App() {
@@ -7,6 +7,9 @@ function App() {
     <div>
         <BrowserRouter>
           <Header />
+          <Routes> 
+            <Route path='/' element={<Main />} />
+          </Routes>
         </BrowserRouter>
     </div>
   );

@@ -1,0 +1,8 @@
+.mainWrapper {
+    display: flex;
+    gap: 48px;
+}
+
+.actionButton {
+    height: 53px;
+}
