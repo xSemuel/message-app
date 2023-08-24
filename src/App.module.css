@@ -1,0 +1,16 @@
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  height: 100vh;
+}
+
+.pageContent {
+  display: flex;
+  flex: 1 1 auto;
+  padding: 24px;
+
+  max-width: var(--layoud-width);
+  margin: 0 auto;
+}
