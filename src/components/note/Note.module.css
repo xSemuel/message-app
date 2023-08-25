@@ -20,3 +20,9 @@
 .searchInput:focus {
     border: 2px solid var(--color-link-hover);
 }
+
+@media (max-width: 1172px) {
+    .searchInput {
+        width: 100%;     
+    }
+}

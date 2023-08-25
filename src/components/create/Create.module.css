@@ -21,7 +21,7 @@
 .searchInput {
     border-radius: var(--border-8);
     border: 2px solid var(--color-link-hover);
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     background-color: #2e2d3d;
@@ -33,4 +33,11 @@
 
 .searchInput:focus {
     border: 2px solid var(--color-stroke);
+}
+
+
+@media (max-width: 1172px) {
+    .searchInput {
+        width: 100%;     
+    }
 }

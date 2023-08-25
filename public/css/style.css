@@ -56,7 +56,7 @@ button {
     padding: 16px 32px;
     color: var(--color-text);
     background: none;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     border-radius: var(--border-8);
@@ -72,4 +72,21 @@ button:hover {
 
 button:active {
     color: var(--color-stroke);
+}
+
+
+@media (max-width: 1172px) {
+    form {
+        width: calc(100vw - 12em);
+        flex-direction: column;
+    }
+    label, p {
+        font-size: 12px;
+        line-height: 100%;
+    }
+    h3 {
+        color: var(--color-text);
+        font-size: 18px;
+        line-height: 120%;
+    }
 }
