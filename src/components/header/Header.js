@@ -2,14 +2,9 @@ import { NavLink } from "react-router-dom";
 import { useState } from 'react';
 import logoIcon from '../../image/MessageApp_logo.svg';
 import menuAdaptive from './../../image/menuAdaptive.svg';
+import { NAVIGATION_LINKS } from '../../constants'
 import styles from './Header.module.css';
 
-const navigationLinks = [
-    { text: 'Home', link: '/' },
-    { text: 'Note', link: '/note' },
-    { text: 'Create', link: '/create' },
-    { text: 'About', link: '/about' },
-]
 
 export function Header() {
 
@@ -25,7 +20,7 @@ export function Header() {
         setNavbarOpen(false);
     }
 
-    const namAdaptiveMenu = navigationLinks.map(({ text, link }, index) => 
+    const namAdaptiveMenu = NAVIGATION_LINKS.map(({ text, link }, index) => 
     <li key={index}><NavLink className={styles.menuItemMobile} to={link} onClick={closeMenuMobile}>{text}</NavLink></li>
     );
 
@@ -38,7 +33,7 @@ export function Header() {
                 </div>
                 <nav className={styles.navWrapper}>
                     <ul className={styles.navMenu}>    
-                        {navigationLinks.map(({ text, link }, index) => 
+                        {NAVIGATION_LINKS.map(({ text, link }, index) => 
                             <li key={index}><NavLink className={styles.menuItem} to={link}>{text}</NavLink></li>
                         )}
                     </ul>
