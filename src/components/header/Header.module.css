@@ -35,22 +35,48 @@
     color: var(--color-link-hover);
 }
 
-.mobileMenu {
+/* Mobile Menu */
+
+.mobileMenuToogle {
+    position: absolute;
+    background: var(--color-bg-medium);
+    list-style: none;
+    right: 3rem;
+    width: 120px;
+    margin-top: 250px;
+    border-radius:  var(--border-8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0 5px;
+    font-size: 24px;
+    
+}
+
+.menuItemMobile {
+    font-size: 16px;
+    margin: auto 0;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.mobileMenuButton {
     display: none;
     background: none;
     border: none;
     cursor: pointer;
-
 }
 
+/* Adaptive */
 
 @media (max-width: 860px) {
     .navWrapper{
         display:none;
     }
-    .mobileMenu{
+    .mobileMenuButton{
         display: block;
         margin-right: 3rem;
- 
+        padding: 8px 18px;
     }
 }
