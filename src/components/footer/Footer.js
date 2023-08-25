@@ -25,7 +25,12 @@ export function Footer() {
                     </div> 
 
                     <div className={styles.copywrite}>
-                        Design by Semuel @ 2023  Email: <a href="!#">serg_artemenko@ukr.net</a>
+                        <div>
+                            Design by Semuel @ 2023
+                        </div> 
+                        <div>  
+                            Email: <a href="!#">serg_artemenko@ukr.net</a>
+                        </div> 
                     </div>
                 </div>
         </footer>

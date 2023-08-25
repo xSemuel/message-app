@@ -34,3 +34,35 @@
 .menuItem:hover {
     color: var(--color-link-hover);
 }
+
+.mobileMenu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 860px) {
+    .navWrapper{
+        display:none;
+    }
+    .mobileMenu{
+        display: block;
+        margin-right: 3rem;
+ 
+    }
+
+    button {
+        border: none;
+    }
+    
+    button:hover {
+        border: 1px solid var(--color-stroke);
+    }
+    
+    button:active {
+        color: var(--color-stroke);
+    }
+}

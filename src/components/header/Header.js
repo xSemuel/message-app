@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
-import logoIcon from "../../image/MessageApp_logo.svg";
+import logoIcon from '../../image/MessageApp_logo.svg';
+import menuAdaptive from './../../image/menuAdaptive.svg';
 import styles from './Header.module.css';
 
 const navigationLinks = [
@@ -16,14 +17,18 @@ export function Header() {
                 <div>
                     <img src={logoIcon} alt="Логотип Message App" />
                 </div>
-                <nav>
+                <nav className={styles.navWrapper}>
                     <ul className={styles.navMenu}>    
                         {navigationLinks.map(({ text, link }, index) => 
                             <li key={index}><NavLink exact className={styles.menuItem} to={link}>{text}</NavLink></li>
                         )}
                     </ul>
-                </nav>   
+                </nav>  
+                <button  className={styles.mobileMenu}>
+                    <img src={menuAdaptive} alt="Мобільна навігація" />
+                </button> 
             </div>
+           
         </div>
     );
 }
