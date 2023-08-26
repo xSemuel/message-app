@@ -28,9 +28,9 @@ export function Burgermenu() {
                 <img src={menuAdaptive} alt="Мобільна навігація" />
                 {/* {navbarOpen ? 'close' : 'open'} */}
             </button> 
-            <ul className={styles.mobileMenuToogle}>
-                {navbarOpen && namAdaptiveMenu}
-            </ul>
+            { navbarOpen && <ul className={styles.mobileMenuToogle}>
+                {namAdaptiveMenu}
+            </ul>}
         </div>
      );
 }

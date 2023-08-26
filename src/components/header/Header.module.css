@@ -38,20 +38,7 @@
 /* Mobile Menu */
 
 .mobileMenuToogle {
-    position: absolute;
-    background: var(--color-bg-medium);
-    list-style: none;
-    right: 3rem;
-    width: 120px;
-    margin-top: 250px;
-    border-radius:  var(--border-8);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    padding: 0 5px;
-    font-size: 24px;
-    
+    display: none;
 }
 
 .menuItemMobile {
@@ -76,4 +63,23 @@
         margin-right: 3rem;
         padding: 8px 18px;
     }
+
+    .mobileMenuToogle {
+        position: absolute;
+        background: var(--color-bg-medium);
+        list-style: none;
+        right: 3rem;
+        width: 120px;
+        height: 170px;
+        margin-top: 10px;
+        border-radius:  var(--border-8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 0 5px;
+        font-size: 24px;
+        
+    }
+
 }
