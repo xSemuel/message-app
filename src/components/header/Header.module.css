@@ -66,6 +66,7 @@
 
     .burgerMenuToogle {
         position: absolute;
+        animation-delay: 5s;
         background: var(--color-bg-medium);
         list-style: none;
         right: 3rem;
