@@ -8,28 +8,28 @@ export function Burgermenu() {
 
     const [navbarOpen, setNavbarOpen] = useState(false);
 
-    function viewMobileMenu(event) {
+    function viewBurgerMenu(event) {
         event.preventDefault();
         setNavbarOpen((prev) => !prev);
         console.log(navbarOpen)
     }
 
-    function closeMenuMobile() {
+    function closeBurgerMenu() {
         setNavbarOpen(false);
     }
 
-    const namAdaptiveMenu = NAVIGATION_LINKS.map(({ text, link }, index) => 
-    <li key={index}><NavLink className={styles.menuItemMobile} to={link} onClick={closeMenuMobile}>{text}</NavLink></li>
+    const navAdaptiveMenu = NAVIGATION_LINKS.map(({ text, link }, index) => 
+    <li key={index}><NavLink className={styles.burgerMenuItem} to={link} onClick={closeBurgerMenu}>{text}</NavLink></li>
     );
 
     return ( 
         <div>
-            <button className={styles.mobileMenuButton} onClick={viewMobileMenu}>
+            <button className={styles.burgerMenuButton} onClick={viewBurgerMenu}>
                 <img src={menuAdaptive} alt="Мобільна навігація" />
                 {/* {navbarOpen ? 'close' : 'open'} */}
             </button> 
-            { navbarOpen && <ul className={styles.mobileMenuToogle}>
-                {namAdaptiveMenu}
+            { navbarOpen && <ul className={styles.burgerMenuToogle}>
+                {navAdaptiveMenu}
             </ul>}
         </div>
      );

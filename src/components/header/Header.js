@@ -4,9 +4,7 @@ import { NAVIGATION_LINKS } from '../../constants';
 import { Burgermenu } from "./Burgermenu";
 import styles from './Header.module.css';
 
-
 export function Header() {
-
     return (
         <div className={styles.headerWrapper}>
             <div className={styles.headerWrapperNav}>
@@ -23,5 +21,5 @@ export function Header() {
                 <Burgermenu />    
             </div>                
         </div>
-    );
+    )
 }
