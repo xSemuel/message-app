@@ -21,7 +21,7 @@
     border: 2px solid var(--color-link-hover);
 }
 
-@media (max-width: 1172px) {
+@media (max-width: 860px) {
     .searchInput {
         width: 100%;     
     }

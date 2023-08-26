@@ -6,3 +6,9 @@
 .actionButton {
     height: 53px;
 }
+
+@media (max-width: 860px) {
+    .mainWrapper {
+        flex-direction: column;
+    }
+}
