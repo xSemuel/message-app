@@ -23,7 +23,7 @@ export function Burgermenu() {
     );
 
     return ( 
-        <div>
+        <>
             <button className={styles.burgerMenuButton} onClick={viewBurgerMenu}>
                 <img src={menuAdaptive} alt="Мобільна навігація" />
                 {/* {navbarOpen ? 'close' : 'open'} */}
@@ -31,7 +31,7 @@ export function Burgermenu() {
             { navbarOpen && <ul className={styles.burgerMenuToogle}>
                 {navAdaptiveMenu}
             </ul>}
-        </div>
+        </>
      );
 }
  
